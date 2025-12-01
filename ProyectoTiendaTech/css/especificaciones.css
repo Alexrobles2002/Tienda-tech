@@ -1,0 +1,6 @@
+#head-table {
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #e7e4e4;
+}

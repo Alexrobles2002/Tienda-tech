@@ -1,0 +1,727 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 5;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+header, nav, main, footer, section, article, figure {
+  margin: 13px;
+  padding: 12px;
+}
+
+h1, h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #6A11CB; 
+}
+h1 { font-size: 28px; margin: 0 0 6px 0; }
+h2 { font-size: 24px; margin: 6px 0; }
+p { font-size: 16px; margin: 6px 0; }
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+header {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background-color: #2E2E2E; 
+  color: #f4f4f4; 
+  border-bottom: 3px solid #6A11CB; 
+  animation: fadeInDown 0.8s ease-out forwards;
+}
+
+header #logo_tech {
+  width: auto;
+  height: 60px;
+  animation: float 5s ease-in-out infinite;
+  margin: 0 auto 10px;
+}
+
+header .site-title {
+  color: #ffffff;
+}
+
+header .site-tagline {
+  color: #c0c0c0;
+}
+
+
+nav.top {
+  padding-bottom: 8px;
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav.top ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav.top a {
+  text-decoration: none;
+  color: #f4f4f4; 
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 20px; 
+  transition: all 0.3s ease;
+}
+
+nav.top a:hover {
+  color: #ffffff;
+  background-color: #6A11CB; 
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(106, 17, 203, 0.4);
+}
+
+.botones-sesion .btn, .btn-user, .btn-logout {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.botones-sesion .btn:hover, .btn-user:hover, .btn-logout:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(106, 17, 203, 0.25);
+}
+
+.btn-user {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.btn-logout {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.logo-header {
+  width: auto;
+  height: auto;
+  animation: float 5s ease-in-out infinite;
+  margin: 0;
+}
+
+.header-center {
+  flex: 1;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.site-title {
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+
+.site-tagline {
+  color: #c0c0c0;
+  margin: 0;
+}
+
+.botones-sesion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+}
+
+.botones-sesion .fa-address-card {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+
+.grid {
+  margin-top: 8px;
+}
+
+.grid article {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 1% 20px 1%;
+  padding: 15px;
+
+  /* Efecto Cristal */
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid article:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+figure {
+  margin: 0 0 8px 0;
+  padding: 0;
+  border: none;
+}
+
+figcaption {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+
+.grid article a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 8px;
+  background-color: #6A11CB;
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.2s ease;
+}
+
+.grid article a:hover {
+  background-color: #560eaa;
+  transform: scale(1.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #e5e5e5;
+  padding: 8px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #f6f8fa;
+}
+
+
+form {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  max-width: 720px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin: 0 0 12px 0;
+}
+
+legend {
+  font-weight: 700;
+  color: #6A11CB;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input, select, textarea, button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 10px 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-right: 6px;
+}
+
+button[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #6A11CB;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #560eaa;
+}
+
+
+#video {
+  max-width: 100%;
+  height: auto;
+  display: auto;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#video iframe {
+  width: 100%;
+  resize: both;
+  max-height: 500px;
+  border-radius: 8px;
+}
+
+/* ==================================================== */
+/* MODAL IFRAMES RESPONSIVOS (LOGIN/CARRITO) */
+/* ==================================================== */
+.seccion-iframe { 
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.7); 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1000; 
+  padding: 20px; 
+  box-sizing: border-box; 
+  backdrop-filter: blur(5px);
+  display: none; 
+}  
+
+.iframe-contenedor { 
+  resize: both; /* Permite redimensionar desde la esquina */
+  position: relative; 
+  padding: 10px;
+  
+  /* TAMAÑOS PREDETERMINADOS PARA LOGIN (450px) */
+  width: 450px; /* Tamaño predeterminado (Login) */
+  height: auto; 
+    
+  /* LÍMITES MÁXIMOS PARA AMBOS IFRAMES (LOGIN Y CARRITO) */
+  max-width: 90vw; /* Límite máximo de expansión horizontal */
+  max-height: 90vh; /* Límite máximo de expansión vertical */
+    
+  /* MÍNIMOS REQUERIDOS PARA LA REDIMENSIÓN */
+  min-width: 300px; 
+  min-height: 300px;
+    
+  /* CLAVE PARA LA REDIMENSIÓN */
+  background: #fff; 
+  border-radius: 8px; 
+  overflow: auto; /* CLAVE: Necesario para que 'resize: both' funcione */
+  box-shadow: 0 5px 25px rgba(0,0,0,0.2); 
+}
+
+
+.iframe-login { 
+    width: 100%; 
+    height: 480px; /* Altura fija base para el contenido del iframe de login */
+    border: none; 
+    display: block;
+}
+
+/* Ajuste específico para el contenedor del carrito */
+#iframe-cart .iframe-contenedor {
+    width: 500px; /* Ancho predeterminado del carrito */
+    height: 500px; /* Altura predeterminada del carrito */
+}
+
+.iframe-close { 
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    background: #fff; 
+    border: none; 
+    border-radius: 50%; 
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer; 
+    font-size: 18px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+    z-index: 1001; /* Asegura que esté por encima del iframe */
+}
+.iframe-close:hover { background: #f0f0f0; }
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #2E2E2E;
+  color: #c0c0c0; 
+  border-top: 3px solid #6A11CB;
+  font-size: 14px;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer section {
+    flex: 1;
+    min-width: 250px;
+}
+
+footer h2.footer-title {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 8px;
+}
+
+footer a {
+  color: #a788ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+footer .lista-redes {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .lista-redes a i {
+  font-size: 2em; 
+  color: #a788ff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .lista-redes a:hover i {
+  transform: scale(1.2) rotate(10deg); 
+}
+
+footer .nav-legal ul {
+    list-style: none;
+    padding: 0;
+}
+footer .nav-legal li {
+    margin-bottom: 8px;
+}
+
+nav.top {
+  padding-bottom: 8px;
+  margin-top: 15px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  /* Fondo semi-transparente con difuminado y sombra */
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin: 0 !important;
+}
+
+
+
+.visually-hidden {
+  position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .grid article {
+    display: block;
+    width: auto;
+    margin: 0 0 12px 0;
+  }
+}
+
+
+/* ==================================================== */
+/* MEDIA QUERIES PARA RESPONSIVIDAD DEL HEADER Y FOOTER */
+/* ==================================================== */
+
+/* Ajustes para tabletas y pantallas medianas (similar al 768px, pero mejorado) */
+@media screen and (max-width: 850px) {
+    /* HEADER */
+    .header-inner {
+        flex-direction: column; /* Apila el logo/título, el centro y los botones */
+        text-align: center;
+    }
+    
+    .header-left {
+        /* Centra el texto y el logo */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* MENÚ DE NAVEGACIÓN (nav.top) */
+    nav.top ul {
+        gap: 8px; /* Reduce el espacio entre ítems */
+        padding: 0;
+        justify-content: center;
+    }
+    
+    nav.top a {
+        font-size: 14px; /* Reduce el tamaño de la fuente del menú */
+        padding: 6px 10px; /* Reduce el padding de los botones */
+    }
+    
+    /* BOTONES DE SESIÓN */
+    .botones-sesion {
+        flex-direction: row; /* Pone los botones de sesión en una fila */
+        justify-content: center;
+        width: 100%; 
+        margin-top: 1rem;
+        gap: 10px;
+        max-width: none; /* Elimina el límite de 200px para que se extienda */
+    }
+    
+    .botones-sesion .fa-address-card, .botones-sesion .btn-cart {
+        margin-bottom: 0;
+    }
+    
+    .botones-sesion .btn, .btn-user, .btn-logout, .btn-cart {
+        padding: 6px 12px; /* Reduce el padding de los botones */
+        font-size: 13px;
+        margin: 0;
+    }
+
+    /* FOOTER (Empieza a apilarse antes que en móvil) */
+    footer .footer-content {
+        gap: 30px;
+    }
+}
+
+
+/* El resto de estilos (tipografía, botones de carrito, FAQ) */
+.tipografia h3 {
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem 0;
+  color: #333;
+}
+
+.tipografia h4 {
+  font-size: 1.2rem;
+  margin: 0.8rem 0 0.4rem 0;
+  color: #444;
+}
+
+/* Estilos para el botón del carrito */
+.btn-cart {
+    background-color: #ffc107; /* Color amarillo/oro */
+    color: #212529;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-cart:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+/* Estilos para la sección FAQ */
+.faq-container {
+    max-width: 800px;
+    margin: 1px ;
+}
+.faq-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.faq-question {
+    background-color: #f6f8fa;
+    padding: 15px 20px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #6A11CB;
+    display: block;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+.faq-question:hover {
+    background-color: #eee;
+}
+.faq-question.active {
+    background-color: #6A11CB;
+    color: white;
+}
+.faq-answer {
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+    font-size: 0.95rem;
+    /* 'display:none' es controlado por JS */
+}
+/* Estilo para las imágenes dentro de las tarjetas de la galería */
+.grid article figure img {
+    width: 100%;             /* Asegura que la imagen ocupe el ancho del contenedor */
+    height: 200px;           /* Establece una altura fija para el contenedor de la imagen */
+    object-fit: contain;     /* <--- CLAVE: Mantiene la relación de aspecto y ajusta la imagen sin recortar */
+    display: block;          /* Asegura que la imagen sea un elemento de bloque */
+    margin: 0 auto;          /* Centra la imagen horizontalmente */
+    padding: 5px;            /* Pequeño padding interno */
+    transition: transform 0.3s ease;
+}
+
+.grid article figure img:hover {
+    transform: scale(1.1); /* Efecto de zoom sutil al pasar el ratón */
+}
+
+/* ==================================================== */
+/* 2.1. CONTEXTO DE POSICIÓN (Necesario para la flecha) */
+/* ==================================================== */
+
+header.header-principal {
+    position: relative; /* CLAVE: Contenedor para que la flecha se posicione dentro */
+    padding-bottom: 2.5rem; /* Asegura espacio si la flecha va abajo */
+}
+
+/* Contenedor del Botón (Opción 1: Centrado sobre el menú) */
+.menu-toggle-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    margin-top: 10px; /* Separación del header-inner */
+    position: absolute; /* CLAVE: Posicionamiento para anclarlo */
+    width: 100%;
+    bottom: 0px; /* Coloca el contenedor en la parte inferior del header */
+    z-index: 10;
+}
+
+/* ==================================================== */
+/* 2.2. ESTILOS DEL BOTÓN (La Flecha Púrpura) */
+/* ==================================================== */
+.menu-toggle {
+    display: block; 
+    background: transparent;
+    border: none;
+    color: #6A11CB; /* Color púrpura */
+    cursor: pointer;
+    font-size: 2rem; 
+    padding: 0;
+    line-height: 1; /* Elimina espacio extra alrededor del ícono */
+    transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+    color: #560eaa; 
+}
+
+/* Animación de Rotación de la Flecha */
+.menu-toggle i {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estado de la flecha cuando el menú está cerrado (apunta hacia abajo) */
+.menu-toggle.is-closed i {
+    transform: rotate(180deg);
+}
+
+/* ==================================================== */
+/* 2.3. ANIMACIÓN DEL MENÚ (nav.top) */
+/* ==================================================== */
+
+nav.top.nav-categorias {
+    /* CLAVE: Altura máx. lo suficientemente grande para cuando está abierto */
+    max-height: 200px; 
+    overflow: hidden; /* Oculta el contenido durante la animación */
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+    
+    /* Mantiene tus estilos de flexbox para centrar los enlaces */
+    display: flex; 
+    justify-content: center;
+    padding-bottom: 8px; /* Mantener tu padding original */
+    margin-top: 15px; /* Mantener tu margen original */
+}
+
+/* Clase para ocultar el menú (se añade con JS) */
+nav.top.nav-categorias.is-closed {
+    max-height: 0;
+    opacity: 0;
+    /* Eliminar el espacio del menú colapsado */
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}

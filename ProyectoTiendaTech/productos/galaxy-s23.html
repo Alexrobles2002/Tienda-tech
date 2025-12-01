@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samsung Galaxy S23 Ultra | Tienda Tech Perú</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/products.css">
+  <link rel="icon" href="/ProyectoTiendaTech/assets/Tech-peru.png.jpg" />
+</head>
+<body class="producto-page">
+
+  <!-- HEADER -->
+<header class="header-principal">
+  <div class="header-inner">
+    <div class="header-left">
+    <img id="logo_tech" class="logo-header" src="/ProyectoTiendaTech/assets/logo_tech.png" alt="Logo Tienda Tech Perú" />
+      <h1 class="site-title">Tienda Tech Perú</h1>
+      <p class="site-tagline">Encuentra la mejor tecnología en <strong>laptops</strong>, <strong>smartphones</strong>, <strong>accesorios</strong> y <strong>componentes.</strong></p>
+    </div>
+
+    <div class="botones-sesion" aria-live="polite">
+      <i class="fa-solid fa-address-card"></i>
+      <button id="btn-login" class="btn btn-login" type="button">Iniciar sesión</button>
+      <button id="btn-register" class="btn btn-register" type="button">Crear cuenta</button>
+      <span id="msg-sesion" class="msg-sesion" aria-hidden="true"></span>
+      <button id="btn-user" class="btn-user" type="button" style="display:none;"></button>
+      <button id="btn-logout" class="btn btn-logout" type="button" style="display:none;">Cerrar sesión</button>
+    
+    <button id="btn-cart" class="btn btn-cart" type="button" aria-label="Ver carrito de compras">
+        <i class="fa-solid fa-cart-shopping"></i> 
+    </button>
+    
+    </div>
+  </div>
+
+
+    <!-- Botón de menú hamburguesa (nuevo) -->
+  <div class="menu-toggle-container">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Alternar menú" aria-expanded="true">
+        <i class="fas fa-chevron-up"></i> 
+    </button>
+  </div>
+
+  </header>
+
+  <nav class="top nav-categorias is-open" id="main-nav" aria-label="Categorías principales">
+    <ul>
+        <li><a href="../index.html#laptops">Laptops</a></li>
+        <li><a href="../index.html#smartphones">Smartphones</a></li>
+        <li><a href="../index.html#accesorios">Accesorios</a></li>
+        <li><a href="../index.html#componentes">Componentes</a></li>
+        <li><a href="../index.html#comparativa">Comparativa</a></li>
+        <li><a href="../index.html#cotizacion">Cotización</a></li>
+        <li><a href="../index.html#ofertas">Ofertas</a></li>
+        <li><a href="../index.html#video">Nosotros</a></li>
+        <li><a href="../index.html#contacto">Contacto</a></li>
+      </ul>
+      
+  </div>
+  </nav>
+
+
+  <!-- MAIN -->
+  <main>
+  <article class="product-card">
+    <div class="product-media">
+      <img src="https://media.falabella.com/falabellaCL/16689936_10/w=1500,h=1500,fit=pad" alt="Samsung Galaxy S23 Ultra" />
+    </div>
+
+    <div class="product-info">
+      <h1> <i class="fa-brands fa-android"></i> Samsung Galaxy S23 Ultra</h1>
+      <p class="meta"> Smartphone • Snapdragon 8 Gen 2 • 200MP • S-Pen • 5000mAh</p>
+
+      <div class="tipografia">
+        <ul class="spec-box">
+          <li><strong>Pantalla:</strong> AMOLED de 6,8", QHD+ (3080 x 1440), refresco adaptativo 1-120Hz, 100% DCI-P3, Gorilla Glass Victus 2</li>
+          <li><strong>Procesador:</strong> Qualcomm Snapdragon 8 Gen 2, Adreno 740</li>
+          <li><strong>RAM:</strong> 8 o 12 GB</li>
+          <li><strong>Almacenamiento:</strong> 256, 512 GB o 1 TB</li>
+          <li><strong>Cámaras traseras:</strong> Principal 200MP f/1.7 OIS, Ultra angular 12MP f/2.2 120º, Zoom 10MP f/2.4 OIS 3X, Zoom 10MP f/4.9 OIS 10X</li>
+          <li><strong>Cámara frontal:</strong> 12MP f/2.2</li>
+          <li><strong>Batería:</strong> 5.000 mAh, carga rápida 45W, carga inalámbrica 15W</li>
+          <li><strong>Sistema:</strong> Android 13, One UI 5.1</li>
+          <li><strong>Conectividad:</strong> 5G (2xNano + eSIM), WiFi 6E, Bluetooth 5.3, GPS, NFC, UWB, USB tipo C</li>
+          <li><strong>Dimensiones:</strong> 163.4 x 78.1 x 8.9 mm</li>
+          <li><strong>Peso:</strong> 234 g</li>
+          <li><strong>Otros:</strong> IP68, compatible con Samsung DeX, S-Pen con 2,8ms de latencia</li>
+        </ul>
+      </div>
+
+      <div class="product-actions">
+        <button class="btn add-to-cart" 
+              onclick="agregarAlCarrito(
+                  'Samsung Galaxy S23 Ultra', 
+                  'https://media.falabella.com/falabellaCL/16689936_10/w=1500,h=1500,fit=pad', 
+                  '1976.15', 
+                  'Smartphone • Snapdragon 8 Gen 2 • 200MP • S-Pen • 5000mAh'
+              )">
+              Agregar al carrito
+          </button>
+        <button class="btn secondary"><a href="../index.html#cotizacion">Cotización</a></button>
+      </div>
+    </div>
+  </article>
+</main>
+
+  <section id="iframe-login" class="seccion-iframe" style="display:none;">
+    <div class="iframe-contenedor">
+      <button id="iframe-close" class="iframe-close" type="button" aria-label="Cerrar">✕</button>
+      <iframe id="login-iframe" class="iframe-login" src="" allow="web-share" title="Login - Tienda Tech" frameborder="0"></iframe>
+    </div>
+  </section>
+
+    <!-- IFRAME para el carrito  -->
+  <section id="iframe-cart" class="seccion-iframe" style="display:none;">
+    <div class="iframe-contenedor" id="cart-container">
+      <button id="cart-iframe-close" class="iframe-close" type="button" aria-label="Cerrar carrito">✕</button>
+      <iframe id="cart-iframe" class="iframe-login" src="../carrito.html" title="Carrito de Compras" frameborder="0"></iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+<footer role="contentinfo" id="contacto" class="footer-principal">
+  <p>&copy; 2025 Tienda Tech Perú. Todos los derechos reservados.</p>
+
+  <section class="footer-contacto">
+    <h2 class="footer-title">Contacto</h2>
+    <address class="footer-address">
+      Chimbote, Perú <br>
+      Tel: <a href="tel:+5112345678">+51 1 234 5678</a> <br>
+      Email: <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a>
+    </address>
+  </section>
+
+  <section class="redes">
+    <h2 class="footer-title">Redes Sociales</h2>
+    <ul class="lista-redes">
+      <li class="icon-container">
+        <a href="https://wa.me/5112345678" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+        </a>
+      </li>
+      <li class="icon-container">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook
+        </a>
+      </li>
+      <li class="icon-container">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram
+        </a>
+      </li>
+      <li class="icon-container">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <i class="fa-brands fa-twitter" aria-hidden="true"></i> Twitter (X)
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <nav aria-label="Enlaces legales" class="nav-legal">
+    <ul class="legal-list">
+      <li class="legal-item"><a href="/legal/terminos.html">Términos y Condiciones</a></li>
+      <li class="legal-item"><a href="/legal/politica-privacidad.html">Política de Privacidad</a></li>
+      <li class="legal-item"><a href="/legal/libro-de-reclamaciones.html">Libro de Reclamaciones</a></li>
+    </ul>
+  </nav>
+</footer>
+
+  <script src="/ProyectoTiendaTech/js/auth.js"></script>
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

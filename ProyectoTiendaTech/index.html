@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda Tech Perú | Tecnología, laptops, smartphones y más</title>
+  <meta name="description" content="Tienda Tech Perú: laptops, smartphones, accesorios y componentes. Cotiza tu equipo ideal y compara especificaciones." />
+  <meta name="keywords" content="tecnología, tiendas, laptops, smartphones, accesorios, componentes, Perú, cotización" />
+  <meta name="author" content="Tienda Tech Perú - Grupo2" />
+  <meta name="theme-color" content="#0a84ff" />
+  <link rel="canonical" href="https://www.TiendaTechPerúUTP.com/" />
+  <meta name="robots" content="index,follow" />
+  <!-- Enlace a una librería de iconos ( Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Tienda Tech Perú" />
+  <meta property="og:description" content="Tecnología al mejor precio en Perú. Compara y cotiza." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.TiendaTechPerúUTP.com/" />
+  <meta property="og:image" content="https://www.TiendaTechPerúUTP.com/assets/Tech-peru.png.jpg" />
+
+  <link rel="icon" href="/ProyectoTiendaTech/assets/Tech-peru.png.jpg" />
+
+  <!-- HEADER -->
+<header class="header-principal">
+  <div class="header-inner">
+    <div class="header-left">
+    <img id="logo_tech" class="logo-header" src="/ProyectoTiendaTech/assets/logo_tech.png" alt="Logo Tienda Tech Perú" />
+      <h1 class="site-title">Tienda Tech Perú</h1>
+      <p class="site-tagline">Encuentra la mejor tecnología en <strong>laptops</strong>, <strong>smartphones</strong>, <strong>accesorios</strong> y <strong>componentes.</strong></p>
+      
+    </div>
+
+    <div class="botones-sesion" aria-live="polite">
+      <i class="fa-solid fa-address-card"></i>
+      <button id="btn-login" class="btn btn-login" type="button">Iniciar sesión</button>
+      <button id="btn-register" class="btn btn-register" type="button">Crear cuenta</button>
+      <span id="msg-sesion" class="msg-sesion" aria-hidden="true"></span>
+      <button id="btn-user" class="btn-user" type="button" style="display:none;"></button>
+      <button id="btn-logout" class="btn btn-logout" type="button" style="display:none;">Cerrar sesión</button>
+    
+      <button id="btn-cart" class="btn btn-cart" type="button" aria-label="Ver carrito de compras">
+        <i class="fa-solid fa-cart-shopping"></i> 
+    </button>
+    </div>
+  </div>
+
+  
+  <!-- Botón de menú hamburguesa (nuevo) -->
+  <div class="menu-toggle-container">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Alternar menú" aria-expanded="true">
+        <i class="fas fa-chevron-up"></i> 
+    </button>
+  </div>
+
+  </header>
+
+  <nav class="top nav-categorias is-open" id="main-nav" aria-label="Categorías principales">
+    <ul class="list-categorias">
+        <li class="item-categoria"><a href="#laptops">Laptops</a></li>
+        <li class="item-categoria"><a href="#smartphones">Smartphones</a></li>
+        <li class="item-categoria"><a href="#accesorios">Accesorios</a></li>
+        <li class="item-categoria"><a href="#componentes">Componentes</a></li>
+        <li class="item-categoria"><a href="#comparativa">Comparativa</a></li>
+        <li class="item-categoria"><a href="#cotizacion">Cotización</a></li>
+        <li class="item-categoria"><a href="#ofertas">Ofertas</a></li>
+        <li class="item-categoria"><a href="#video">Nosotros</a></li>
+        <li class="item-categoria"><a href="#contacto">Contacto</a></li>
+      </ul>
+      
+  </div>
+  </nav>
+
+
+  <!-- MAIN -->
+  <main class="main-principal">
+    <h2 class="main-title">Tienda Tech Perú</h2>
+    <p class="lead">Encuentra la mejor tecnología en <strong>laptops</strong>, <strong>smartphones</strong>, accesorios y componentes. Compra seguro y recibe asesoría personalizada.</p>
+    <p class="intro">Compara especificaciones y solicita tu cotización sin compromiso.</p>
+    <br>
+    <!-- Laptops -->
+    <section id="laptops" class="seccion seccion-laptops">
+      <h2 class="seccion-title">Laptops</h2>
+      <p class="seccion-descripcion">Portátiles livianas, ultrabooks y gamer con Intel® y AMD Ryzen™.</p>
+      <div class="grid grid-laptops">
+        <article class="producto tarjeta">
+          <figure class="producto-fig">
+            <img class="producto-img" src="https://media.falabella.com/falabellaPE/883406989_01/w=1500,h=1500,fit=pad" alt="Laptop Intel Core I5 Rtx3050 24gb 512gb SSD" width="360" height="360" />
+            <figcaption class="producto-caption"><i class="fa-brands fa-windows"></i> Laptop Intel Core i5 RTX3050, 24GB RAM, 512GB SSD, 15.6&quot; FHD 144Hz</figcaption>
+          </figure>
+          <a class="link-detalle" href="/ProyectoTiendaTech/productos/laptop-ultrabook.html">Ver detalles</a>
+        </article>
+        <article class="producto tarjeta">
+          <figure class="producto-fig">
+            <img class="producto-img" src="https://pe-media.hptiendaenlinea.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/a/1/a14lnla_imagendeproducto1.png" alt="Laptop HP Gaming Victus 15-fb2017la" width="360" height="360" />
+            <figcaption class="producto-caption"> <i class="fa-brands fa-windows"></i> Laptop HP Victus 15-fb2017la, Ryzen 7, 16GB RAM, RTX 3050, 1TB SSD</figcaption>
+          </figure>
+          <a class="link-detalle" href="/ProyectoTiendaTech/productos/laptop-HP-Victus.html">Ver detalles</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Smartphones -->
+    <section id="smartphones" class="seccion seccion-smartphones">
+      <h2 class="seccion-title">Smartphones</h2>
+      <p class="seccion-descripcion">Modelos de última generación con cámaras de alto rendimiento.</p>
+      <div class="grid grid-smartphones">
+        <article class="producto tarjeta">
+          <figure class="producto-fig">
+            <img class="producto-img" src="https://media.falabella.com/falabellaPE/19316379_1/w=1500,h=1500,fit=pad" alt="iPhone 14 Pro" width="360" height="360" />
+            <figcaption class="producto-caption"><i class="fa-brands fa-apple"></i> iPhone 14 Pro, 6GB RAM, 256GB, cámara triple 48MP</figcaption>
+          </figure>
+          <a class="link-detalle" href="/ProyectoTiendaTech/productos/iphone14pro.html">Ver detalles</a>
+        </article>
+        <article class="producto tarjeta">
+          <figure class="producto-fig">
+            <img class="producto-img" src="https://media.falabella.com/falabellaCL/16689936_10/w=1500,h=1500,fit=pad" alt="Samsung Galaxy S23 Ultra" width="360" height="360" />
+            <figcaption class="producto-caption"> <i class="fa-brands fa-android"></i> Samsung Galaxy S23 Ultra, 12GB RAM, 512GB, S Pen</figcaption>
+          </figure>
+          <a class="link-detalle" href="/ProyectoTiendaTech/productos/galaxy-s23.html">Ver detalles</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Accesorios -->
+    <section id="accesorios" class="seccion seccion-accesorios">
+      <h2 class="seccion-title">Accesorios</h2>
+      <p class="seccion-descripcion">Complementa tu equipo con periféricos y gadgets.</p>
+      <div class="grid grid-accesorios">
+        <article class="producto tarjeta">
+          <figure class="producto-fig">
+            <img class="producto-img" src="https://media.falabella.com/falabellaCL/117075487_01/w=1500,h=1500,fit=pad" alt="Auriculares inalámbricos" width="360" height="360" />
+            <figcaption class="producto-caption"><i class="fa-brands fa-bluetooth"></i> Audífonos inalámbricos Sony WH-1000XM4 con cancelación de ruido</figcaption>
+          </figure>
+          <a class="link-detalle" href="/ProyectoTiendaTech/productos/sony-wh1000xm4.html">Ver detalles</a>
+        </article>
+        <article class="producto tarjeta">
+          <figure class="producto-fig">
+            <img class="producto-img" src="https://www.lg.com/content/dam/channel/wcms/es/images/mn/ultragear-27gr83q-01-1-lg-ultragear-d.jpg" alt="Monitor gamer LG" width="600" height="360" />
+            <figcaption class="producto-caption"> <i class="fa-solid fa-tv"></i> Monitor LG 27&quot; QHD, 165Hz, 1ms</figcaption>
+          </figure>
+          <a class="link-detalle" href="/ProyectoTiendaTech/productos/monitor-lg27.html">Ver detalles</a>   
+        </article>
+      </div>
+    </section>
+
+    <!-- Componentes -->
+    <section id="componentes" class="seccion seccion-componentes">
+      <h2 class="seccion-title">Componentes</h2>
+      <p class="seccion-descripcion">Mejora tu PC con procesadores, GPUs y memorias de última generación.</p>
+      <div class="grid grid-componentes">
+        <article class="producto tarjeta">
+          <figure class="producto-fig">
+            <img class="producto-img" src="https://i.ebayimg.com/images/g/7zQAAOSwPMNlwoxl/s-l1600.webp" alt="Procesador Intel Core i7" width="360" height="360" />
+            <figcaption class="producto-caption"> <i class="fa-solid fa-microchip"></i> Procesador Intel Core i7 13700K</figcaption>
+          </figure>
+          <a class="link-detalle" href="/ProyectoTiendaTech/productos/cpu-intel-i7.html">Ver detalles</a>
+        </article>
+        <article class="producto tarjeta">
+          <figure class="producto-fig">
+            <img class="producto-img" src="https://i.blogs.es/5dbacc/oferta04-2/original.jpeg" alt="Tarjeta gráfica RTX 4070" width="360" height="360" />
+            <figcaption class="producto-caption"> <i class="fa-solid fa-desktop"></i> Tarjeta Gráfica NVIDIA RTX 4070 Ti 12GB</figcaption>
+          </figure>
+          <a class="link-detalle" href="/ProyectoTiendaTech/productos/gpu-rtx4070.html">Ver detalles</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section id="video" class="seccion seccion-video" aria-labelledby="video-title">
+      <h2 id="video-title">Video promocional</h2>
+      <iframe class="embed-video" width="300" height="500" src="https://www.youtube.com/embed/0lABJJ9SyBQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Tabla comparativa -->
+    <section id="comparativa" class="seccion seccion-comparativa" aria-labelledby="comparativa-title">
+      <h2 id="comparativa-title" class="seccion-title">Comparativa de especificaciones</h2>
+      <p class="seccion-descripcion">Revisa rápidamente las características clave antes de cotizar.</p>
+      <table class="tabla tabla-comparativa">
+        <caption>Especificaciones técnicas de productos destacados</caption>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Procesador</th>
+            <th>RAM</th>
+            <th>Precio (PEN)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Laptop Ultrabook 14"</td><td>Intel Core i5-1240P</td><td>16 GB</td><td>3,499</td></tr>
+          <tr><td>Gaming 15.6"</td><td>AMD Ryzen 7 7840HS</td><td>16 GB</td><td>5,899</td></tr>
+          <tr><td>Smartphone AMOLED 6.5"</td><td>Snapdragon 7 Gen 1</td><td>8 GB</td><td>1,899</td></tr>
+        </tbody>
+      </table>
+      <p><a class="ver-mas-comparativas" href="/ProyectoTiendaTech/comparativas/especificaciones.html">Ver más comparativas</a></p>
+    </section>
+
+    <!-- Preguntas frecuentes -->
+    <section id="faq" class="seccion seccion-faq" aria-labelledby="faq-title">
+  <div class="faq-container">
+    <h2 id="faq-title" class="seccion-title">Preguntas Frecuentes (FAQ) +</h2>
+    <article class="faq-item">
+      <h3 class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Puedo cotizar productos que no están en la web?</h3>
+      <p class="faq-answer" style="display:none;">Sí. Nuestra especialidad es la importación a pedido. Puedes usar la sección **Cotización** para enviarnos los detalles y el link del producto (ej. de Amazon o Newegg) y te enviaremos una cotización final.</p>
+    </article>
+
+    <article class="faq-item">
+      <h3 class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Qué métodos de pago aceptan?</h3>
+      <p class="faq-answer" style="display:none;">Aceptamos tarjetas de crédito/débito (Visa, Mastercard, Amex), depósitos/transferencias bancarias (BCP, Interbank), y pagos a través de Yape/Plin.</p>
+    </article>
+
+    <article class="faq-item">
+      <h3 class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Cuánto tiempo tardan los envíos?</h3>
+      <p class="faq-answer" style="display:none;">El tiempo de envío varía. Para productos en stock local, el plazo es de 24 a 48 horas. Para importaciones a pedido (cotización), el plazo es de 10 a 15 días hábiles.</p>
+    </article>
+  </div>
+  <p><a class="ver-mas" href="/ProyectoTiendaTech/comparativas/preguntasf.html">Ver más preguntas</a></p>
+</section>
+
+    <!-- Formulario -->
+    <section id="cotizacion" class="seccion seccion-cotizacion" aria-labelledby="cotizacion-title">
+      <h2 id="cotizacion-title">Solicita tu cotización</h2>
+      <p>Completa el formulario y serás redirigido a la lista de cotizaciones.</p>
+
+      
+      <form method="get" class="form-cotizacion">
+        <fieldset class="fieldset-cotizacion">
+          <legend>Solicitud de cotización</legend>
+
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Ej: Michel Rojas" autocomplete="name" required />
+
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" placeholder="michel@gmail.com" autocomplete="email" required />
+
+          <label for="producto">Producto de interés</label>
+          <select id="producto" name="producto" required>
+            <option value="" disabled selected>-- Elige un producto --</option>
+            <option value="Laptop Ultrabook 14">Laptop Ultrabook 14"</option>
+            <option value="Gaming 15.6">Gaming 15.6"</option>
+            <option value="Smartphone AMOLED 6.5">Smartphone AMOLED 6.5"</option>
+            <option value="Headset BT">Headset BT</option>
+            <option value="Monitor 27">Monitor 27"</option>
+            <option value="Nvidia GPU serie 40">Nvidia GPU serie 40</option>
+          </select>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos usos, presupuesto, plazo de compra..." required></textarea>
+
+          <div class="checkbox-acepto">
+            <input id="acepto" name="acepto" type="checkbox" required />
+            <label for="acepto">Acepto la <a href="/legal/politica-privacidad.html">Política de Privacidad</a></label>
+          </div>
+
+          <button type="submit" class="btn btn-enviar">Enviar cotización</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <!-- IFRAME para login/registro  -->
+  <section id="iframe-login" class="seccion-iframe" >
+    <div class="iframe-contenedor">
+      <button id="iframe-close" class="iframe-close" type="button" aria-label="Cerrar">✕</button>
+      <iframe id="login-iframe" class="iframe-login" src="" allow="web-share" title="Login - Tienda Tech" frameborder="0"></iframe>
+    </div>
+  </section>
+  <!-- IFRAME para el carrito  -->
+  <section id="iframe-cart" class="seccion-iframe" style="display:none;">
+  <div class="iframe-contenedor" id="cart-container">
+    <button id="cart-iframe-close" class="iframe-close" type="button" aria-label="Cerrar carrito">✕</button>
+    <iframe id="cart-iframe" class="iframe-login" src="/ProyectoTiendaTech/carrito.html" title="Carrito de Compras" frameborder="0"></iframe>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo" id="contacto" class="footer-principal">
+    <p>&copy; 2025 Tienda Tech Perú. Todos los derechos reservados.</p>
+
+    <section class="footer-contacto">
+      <h2 class="footer-title">Contacto</h2>
+      <address class="footer-address">
+        Chimbote, Perú <br>
+        Tel: <a href="tel:+5112345678">+51 1 234 5678</a> <br>
+        Email: <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a>
+      </address>
+    </section>
+
+    <section class="redes">
+      <h2 class="footer-title">Redes Sociales</h2>
+      <ul class="lista-redes">
+        <li class="icon-container">
+          <a href="https://wa.me/5112345678" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+          </a>
+        </li>
+        <li class="icon-container">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook
+          </a>
+        </li>
+        <li class="icon-container">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram
+          </a>
+        </li>
+        <li class="icon-container">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <i class="fa-brands fa-twitter" aria-hidden="true"></i> Twitter (X)
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <nav aria-label="Enlaces legales" class="nav-legal">
+      <ul class="legal-list">
+        <li class="legal-item"><a href="/legal/terminos.html">Términos y Condiciones</a></li>
+        <li class="legal-item"><a href="/legal/politica-privacidad.html">Política de Privacidad</a></li>
+        <li class="legal-item"><a href="/legal/libro-de-reclamaciones.html">Libro de Reclamaciones</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="/ProyectoTiendaTech/js/auth.js"></script>
+  <script src="/ProyectoTiendaTech/js/main.js"></script>
+</body>
+</html>

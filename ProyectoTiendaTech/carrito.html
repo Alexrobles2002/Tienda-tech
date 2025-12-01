@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="cart-wrapper">
+    
+        <h2 class="cart-title"><i class="fa-solid fa-cart-shopping"></i> Carrito de Compras</h2>
+        
+        <div id="cart-items-container">
+            <p id="empty-message">Tu carrito está vacío.</p>
+        </div>
+    
+        <div id="cart-total-footer">
+            <span>Total:</span>
+            <span id="cart-total-amount">S/ 0.00</span>
+        </div>
+    
+        <button class="btn-checkout" onclick="iniciarCheckout()">Finalizar Compra</button>
+        <button id="btn-seguir" class="btn-continue" type="button" aria-label="Seguir comprando">Seguir comprando</button>
+    </div>
+        <script src="js/carrito.js"></script>
+    <script src="/ProyectoTiendaTech/js/main.js"></script>
+</body>
+</html>
