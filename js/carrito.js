@@ -151,9 +151,9 @@
             // Intentar navegar la ventana padre y cerrar el modal-cart 
             try {
                 window.parent.postMessage({ type: 'close_cart' }, '*');
-                window.parent.location.href = '/ProyectoTiendaTech/index.html';
+                window.parent.location.href = '/index.html';
             } catch (e) {
-                window.location.href = '/ProyectoTiendaTech/index.html';
+                window.location.href = '/index.html';
             }
         });
     }
